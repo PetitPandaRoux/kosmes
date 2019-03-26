@@ -21,14 +21,14 @@ $bleu: #273480ff;
 }
 
 h1 {
-  font-family:'Another-Flight';
-  font-size: 16px;
+  font-family:'Another-Flight', sans-serif;
+  font-size: 2rem;
 }
 
 h2 {
   margin-left: 20%;
   font-family:'BebasNeue-Regular',sans-serif;
-  font-size:15px;
+  font-size:1.8rem;
 }
 
 main {
@@ -71,7 +71,7 @@ main img {
 }
 
 
-section.contact {
+footer.contact {
   height:15%;
   padding-bottom: 2rem;
 }
@@ -97,14 +97,14 @@ section.contact {
 }
 
 .contact-name {
-  font-size:9px;
+  font-size:0.9rem;
   margin:5px 15px 0 10px;
 }
 
 .contact-description {
   position:relative;
   top:1pt;
-  font-size:8px;
+  font-size:0.8rem;
   margin:5px 10px 0 15px;
 }
 
@@ -116,22 +116,16 @@ section.contact {
   unicode-bidi: bidi-override; direction: rtl;
 }
 
- @media only screen and (max-width: 600px) {
-  .contact-container  {
-    justify-content:center;
-    text-align: center;
-    margin-right:0px;
-  }
+ @media only screen and (max-width:600px) {
 
   h1 {
-    font-size:12px;
-
+    font-size:1.2rem;
   }
 
   h2 {
     margin-left:0px;
     text-align: center;
-    font-size:10px;
+    font-size:1.1rem;
   }
 
   main img {
@@ -141,6 +135,19 @@ section.contact {
   .line_bottom {
     top:-2px;
   } 
+  
+  .contact-container  {
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    margin-right:0px;
+  }
 
+  .contact-description {
+    font-size:0.6rem;
+  }
 
+  .contact-name {
+    font-size:0.7rem;
+  }
 }
