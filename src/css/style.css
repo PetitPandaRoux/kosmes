@@ -141,5 +141,9 @@ section.contact {
     width:50%;
   }
 
+  .line_bottom {
+    top:-3pt;
+  } 
+
 
 }
