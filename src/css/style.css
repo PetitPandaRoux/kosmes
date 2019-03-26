@@ -1,0 +1,145 @@
+$bleu: #273480ff;
+
+@font-face {
+ font-family: "Roboto-Regular";
+ src: url("/src/assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+ font-family: "BebasNeue-Regular";
+ src: url("/src/assets/fonts/BebasNeue-Regular.otf") format("opentype");
+}
+
+@font-face {
+ font-family: "Another-Flight";
+ src: url("/src/assets/fonts/Another-Flight.otf") format("opentype");
+}
+
+
+* {
+  margin:0;
+  padding:0;
+  color:$bleu;
+}
+
+h1 {
+  font-family:'Another-Flight', sans-serif;
+  font-size: 16pt;
+}
+
+h2 {
+  margin-left: 20%;
+  font-family:'BebasNeue-Regular',sans-serif;
+  font-size:15pt;
+}
+
+main {
+  text-align:center;
+  margin-bottom:8%;
+}
+
+main img {
+  margin-top:5%;
+  width:30%;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+section.contact {
+  height:15%;
+  padding-bottom: 2rem;
+}
+
+.line_bottom{
+  position:relative;
+  top:-6pt;
+  padding-bottom:2px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: 2px solid $bleu; /* whichever color you prefer */
+}
+
+.contact-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  padding:5px;
+  margin-right:10%;
+  font-family:'Roboto-Regular',sans-serif;
+
+}
+
+.contact-name {
+  font-size:9pt;
+  margin:5px 15px 0 10px;
+}
+
+.contact-description {
+  position:relative;
+  top:1pt;
+  font-size:8pt;
+  margin:5px 10px 0 15px;
+}
+
+.margin__b {
+  padding:15px 0;
+}
+
+.courriel {
+  unicode-bidi: bidi-override; direction: rtl;
+}
+
+ @media only screen and (max-width: 600px) {
+  .contact-container  {
+    justify-content:center;
+    text-align: center;
+    margin-right:0px;
+  }
+
+  h1 {
+    font-size:12pt;
+
+  }
+
+  h2 {
+    margin-left:0px;
+    text-align: center;
+    font-size:12pt;
+  }
+
+  main img {
+    width:50%;
+  }
+
+
+}
