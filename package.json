@@ -14,7 +14,7 @@
     "build_js": "babel src/js --out-file dist/js/script.js --source-maps",
     "build_css": "npm run css && npm run autoprefixer --source-maps",
     "build_html":"cp index.html dist",
-    "build_assets":"cp -r src/assets/ dist/assets",
+    "build_assets":"cp -r src/assets/ dist/",
     "build": "npm run build_css && npm run build_js && npm run build_html && npm run build_assets",
     "watch:html": "onchange 'index.html' -- npm run serve",
     "watch:css": "onchange 'src/css/*.css' -- npm run build_css",

@@ -2,21 +2,18 @@ $bleu: #273480ff;
 
 @font-face {
  font-family: "Roboto-Regular";
- src: url("/src/assets/fonts/Roboto-Regular.ttf") format("truetype");
+ src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
-
 
 @font-face {
  font-family: "BebasNeue-Regular";
- src: url("/src/assets/fonts/BebasNeue-Regular.otf") format("opentype");
+ src: url("../assets/fonts/BebasNeue-Regular.otf") format("opentype");
 }
 
 @font-face {
  font-family: "Another-Flight";
- src: url("/src/assets/fonts/Another-Flight.otf") format("opentype");
+ src: url("../assets/fonts/Another-Flight.otf") format("opentype");
 }
-
-
 * {
   margin:0;
   padding:0;
@@ -24,14 +21,14 @@ $bleu: #273480ff;
 }
 
 h1 {
-  font-family:'Another-Flight', sans-serif;
-  font-size: 16pt;
+  font-family:'Another-Flight';
+  font-size: 16px;
 }
 
 h2 {
   margin-left: 20%;
   font-family:'BebasNeue-Regular',sans-serif;
-  font-size:15pt;
+  font-size:15px;
 }
 
 main {
@@ -81,7 +78,7 @@ section.contact {
 
 .line_bottom{
   position:relative;
-  top:-6pt;
+  top:-5px;
   padding-bottom:2px;
   margin-left: 10%;
   margin-right: 10%;
@@ -100,14 +97,14 @@ section.contact {
 }
 
 .contact-name {
-  font-size:9pt;
+  font-size:9px;
   margin:5px 15px 0 10px;
 }
 
 .contact-description {
   position:relative;
   top:1pt;
-  font-size:8pt;
+  font-size:8px;
   margin:5px 10px 0 15px;
 }
 
@@ -127,14 +124,14 @@ section.contact {
   }
 
   h1 {
-    font-size:12pt;
+    font-size:12px;
 
   }
 
   h2 {
     margin-left:0px;
     text-align: center;
-    font-size:12pt;
+    font-size:10px;
   }
 
   main img {
@@ -142,7 +139,7 @@ section.contact {
   }
 
   .line_bottom {
-    top:-3pt;
+    top:-2px;
   } 
 
 
